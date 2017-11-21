@@ -1,0 +1,44 @@
+{
+  "name": "reborn",
+  "version": "0.1.0",
+  "description": "A CoC MVC web framework for node.js",
+  "keywords": [
+    "zce"
+  ],
+  "homepage": "https://github.com/zce/reborn#readme",
+  "bugs": {
+    "url": "https://github.com/zce/reborn/issues"
+  },
+  "license": "MIT",
+  "author": "zce <w@zce.me> (https://zce.me/)",
+  "files": [
+    "lib"
+  ],
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib",
+    "doc": "doc",
+    "example": "example",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zce/reborn.git"
+  },
+  "scripts": {
+    "lint": "standard --fix",
+    "test": "npm run lint && nyc ava"
+  },
+  "dependencies": {
+    "koa": "^2.4.1",
+    "path-to-regexp": "^2.1.0"
+  },
+  "devDependencies": {
+    "ava": "^0.23.0",
+    "nyc": "^11.3.0",
+    "standard": "^10.0.3"
+  },
+  "engines": {
+    "node": ">=7.6"
+  }
+}
